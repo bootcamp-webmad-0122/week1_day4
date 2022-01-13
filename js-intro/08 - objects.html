@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        // Declaration
+        const person = {
+            name: 'German',
+            lastName: 'Alvarez',
+            celiac: false,
+            address: {
+                street: 'García Lunna',
+                postalCode: 28002
+            },
+            hobbies: ['sky', 'beer', 'rave'],
+            birth: new Date(1986, 23, 4),
+            age: 35
+        }
+
+        console.log(person)
+
+
+        // Property access (getter)
+        const name = `${person.name} ${person.lastName}`
+        console.log('Me llamo', name)
+
+        // Property access alternatives (getter)
+        console.log(`Tengo ${person['age']} años`)
+
+
+
+        // Property access (setter)
+        person.name = 'Ger'
+        console.log('Y ahora me llamo', person.name)
+
+        // Property access alternatives (setter)
+        person['age'] = 36
+        console.log(`Tengo ${person['age']} años`)
+
+        // Object extension
+        person.height = 187
+        console.log(person)
+
+        // Object operator IN
+        console.log('height' in person)
+        console.log('children' in person)
+
+        // Properties array
+        const properties = Object.keys(person)
+        console.log(properties)
+
+        // Values array
+        const values = Object.values(person)
+        console.log(values)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

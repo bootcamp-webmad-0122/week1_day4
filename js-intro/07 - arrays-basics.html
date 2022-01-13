@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        // Declaration
+        const drinks = ['Coca-cola', 'Agua', 'Cacaolat', 'Redbull', 'Mahou', 'Baylies', 'Jagger']
+        console.log(drinks)
+
+        // Access (getter)
+        console.log('La segunda bebida es', drinks[1])          // Getter access
+
+        // Access (setter)
+        drinks[2] = 'Okey D:'
+        console.log('La tercera bebida ahora', drinks[2])          // Getter access
+
+        // Length
+        console.log(`Hay un total de ${drinks.length} bebidas`)
+
+        // Adding values (last, imperative)
+        drinks[drinks.length] = 'Chocobailyes'
+
+        // Adding values (last, declarative)
+        drinks.push('Cervemocho')
+
+        // Adding values (first)
+        drinks.unshift('Zumo')
+        console.log('Ahora las bebidas son:', drinks)
+
+        // Removing values (last)
+        drinks.pop()
+        console.log('Ahora las bebidas son:', drinks)
+
+        // Removing values (several)
+        drinks.splice(1, 2)         // from index one, remove 3 items
+        console.log('Ahora las bebidas son:', drinks)
+
+
+        // Split text into array
+        const string = 'Lorem ipsum dolor sit amet'
+        const words = string.split(' ')
+        console.log('Cada una de las palabras son:', words)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Backticks
+        let customer = { firstName: 'Foo', lastName: 'Kim' };
+        let message = `Hello ${customer.firstName} ${customer.lastName}!!`;
+        console.log(message)
+
+
+        // Special characters
+        const greeting = "Me llamo Germán pero me llaman \"Germantástico\""
+        console.log(greeting)
+
+
+        // String property length
+        console.log(`La longitud del string es de ${greeting.length}`)
+
+        // String methods: charAt()
+        console.log(greeting.charAt(0)); // <== M
+        console.log(greeting.charAt(1)); // <== e
+        console.log(greeting.charAt(120)); // <== "" as an empty string
+        console.log(greeting.charAt(greeting.length - 1))
+
+        // String methods: indexOf()
+        console.log(greeting.indexOf("llamo"))
+        console.log(greeting.indexOf("Ger"))
+        console.log(greeting.indexOf("Ger", 10))
+        console.log(greeting.indexOf("Popino"))
+
+        // String methods: repeat()
+        const doggy = 'Popino'
+        console.log(doggy.repeat(5))
+
+        // String methods: substring()
+        const substring1 = greeting.substring(10, 13)           // Coge del indice 10 al 13
+        console.log(substring1)
+
+        // String methods: substr()
+        const substring2 = greeting.substr(2, 5)                // Desde el iundice 2, coge 5
+        console.log(substring2)
+
+        // String methods: slice()
+        const substring3 = greeting.slice(-10, -3)               // Coge del -10 al -3
+        console.log(substring3)
+
+        // String methods: startsWith()
+        console.log(greeting.startsWith('Me lla'));             // true
+        console.log(greeting.startsWith('llamo'));              // false
+        console.log(greeting.startsWith('llamo', 3));           // true
+
+    </script>
+</body>
+
+</html>
